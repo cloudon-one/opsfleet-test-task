@@ -1,10 +1,10 @@
 
-# [GPU Slicing on EKS](https://github.com/cloudon-one/opsfleet-test-task/blob/main/GPU_slicing.md)
+# [GPU Slicing on EKS task](https://github.com/cloudon-one/opsfleet-test-task/blob/main/GPU_slicing.md)
 
 # Deploying Apache Airflow on Kubernetes cluster
 
 The easiest way to deply on k8s with helm chart described [*here*](https://medium.com/@kerrache.massipssa/deploy-apache-airflow-with-kubernetes-8f764a4cc984). 
-Chart inclused DB engine (Postgres) and some default values. By default Airflow uses **CeleryExecutor** but it could be changed wihtin values.yaml.
+Chart inclused DB engine (Postgres) and some default values. By default Airflow uses **CeleryExecutor** but it could be changed to **KubernetesExecutor** wihtin values.yaml
 
 Below you find step-by-step manual on deploying Airflow with k8s manifests
 
