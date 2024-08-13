@@ -45,6 +45,7 @@ sudo nvidia-smi -i 0 -mig 1
 `
 
 - Configure the desired MIG profile. For example, to create 2 slices of 2 GPU instances each:
+
 `
 sudo nvidia-smi mig -cgi 19,19
 `
@@ -71,6 +72,7 @@ sudo nvidia-smi mig -cci
 **Configure Karpenter Provisioners:**
 
 - Define provisioners in Karpenter that specify the instance types and resources needed.
+
  ` 
    kubectl apply -f manifests/karpenter.yaml
    `
