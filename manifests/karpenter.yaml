@@ -1,0 +1,17 @@
+apiVersion: karpenter.sh/v1alpha5
+kind: Provisioner
+metadata:
+  name: gpu-provisioner
+spec:
+  provider:
+    instanceTypes: [“g5.xlarge”, “p4d.24xlarge”]
+  requirements:
+    - key: “nvidia.com/gpu”
+      operator: In
+      values: [“1”]
+    - key: “karpenter.k8s.aws/instance-category”
+      operator: In
+      values: [“g”]
+  limits:
+    resources:
+      nvidia.com/gpu: 4

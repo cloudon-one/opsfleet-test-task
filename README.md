@@ -1,6 +1,6 @@
 
-
-# Deploying Apache Airflow on Kubernetes cluster
+# Task 1 - Deploying Apache Airflow on Kubernetes cluster
+# Task 2 - GPU Slicing on EKS
 
 ## Prerequisites
 
