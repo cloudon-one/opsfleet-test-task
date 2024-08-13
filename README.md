@@ -59,6 +59,7 @@ Logs from Airflow workers are stored in a PersistentVolume and accessible via th
 
 `
 kubectl cp ./dags/ <pod-name>:/opt/airflow/dags
+
 `
 **Restart Airflow Scheduler:**
 
@@ -67,11 +68,13 @@ kubectl delete pod <scheduler-pod-name>
 `
 
 ## Method for DAG Deployment: PersistentVolume (PV)
+
 This method is chosen for its simplicity and scalability, allowing for straightforward updates to DAGs without complex version control or CI/CD pipelines.
 
 ## Troubleshooting Airflow on Kubernetes
 
 ### Common Issues and Solutions
+
 **Pods Not Starting or Crashing:**
 
 - Check the logs of the pod using kubectl logs <pod-name>. Look for error messages or stack traces.
