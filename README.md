@@ -1,6 +1,8 @@
 
 # Task 1 - Deploying Apache Airflow on Kubernetes cluster
-# Task 2 - GPU Slicing on EKS
+
+# [Task 2 - GPU Slicing on EKS]
+(https://github.com/cloudon-one/opsfleet-test-task/blob/main/GPU_slicing.md)
 
 ## Prerequisites
 
