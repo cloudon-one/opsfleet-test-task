@@ -41,6 +41,7 @@
 
 
 ## Logs from Workers
+
 Logs from Airflow workers are stored in a PersistentVolume and accessible via the Airflow web interface under the "Logs" section.
 
 ## Deploying New DAGs
@@ -50,15 +51,17 @@ Logs from Airflow workers are stored in a PersistentVolume and accessible via th
 - Modify or add new DAG files in your local *dags/* directory.
 
 **Sync with PV:**
+
 `
 kubectl cp ./dags/ <pod-name>:/opt/airflow/dags
 `
 **Restart Airflow Scheduler:**
+
 `
 kubectl delete pod <scheduler-pod-name>
 `
 
-## Chosen Method for DAG Deployment: PersistentVolume (PV)
+## Method for DAG Deployment: PersistentVolume (PV)
 This method is chosen for its simplicity and scalability, allowing for straightforward updates to DAGs without complex version control or CI/CD pipelines.
 
 ## Troubleshooting Airflow on Kubernetes
