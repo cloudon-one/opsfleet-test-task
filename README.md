@@ -11,28 +11,33 @@
 ## Deployment
 
 - **Apply ConfigMap and Secrets**:
+
    `
    kubectl apply -f manifests/airflow-configmap.yaml
    kubectl apply -f manifests/airflow-secrets.yaml
    `
 
 - **Create PersistentVolumeClaims:**:
+
    `
    kubectl apply -f manifests/airflow-pvc.yaml
    `
 
 - **Set up RBAC:**:
+
    `
    kubectl apply -f manifests/airflow-rbac.yaml
    `
 
 - **Deploy Airflow:**:
+
    `
    kubectl apply -f manifests/airflow-deployment.yaml
    kubectl apply -f manifests/airflow-service.yaml
    `
 
 - **Access the Airflow Web Interface (forward service-port)**: 
+
    `
    kubectl port-forward svc/airflow-service 8080:8080
    `
