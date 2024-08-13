@@ -13,6 +13,7 @@ Enable more workloads to run simultaneously on fewer GPU resources.
 Flexibility: Optimize for different workload requirements and adjust slices as needed.
 
 ## Enabling GPU Slicing on EKS
+
 To enable GPU slicing on EKS, you need to use NVIDIA’s Multi-Instance GPU (MIG) feature available in the NVIDIA Ampere architecture (A100 GPUs and newer). Here's how you can set it up:
 
 ### Prerequisites
@@ -23,7 +24,7 @@ Ensure your EKS cluster is running and properly configured.
 
 - **GPU Instance Types:** 
 
-Use AWS GPU instance types that support NVIDIA MIG, such as the g5, g5g, or p4d instance types.
+Use AWS GPU instance types that support NVIDIA MIG, such as the **g5**, **g5g**, or **p4d** instance types.
 
 - **NVIDIA Drivers:** 
 
