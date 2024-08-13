@@ -14,6 +14,9 @@
 
    `
    kubectl apply -f manifests/airflow-configmap.yaml
+   `
+
+   ` 
    kubectl apply -f manifests/airflow-secrets.yaml
    `
 
@@ -33,6 +36,9 @@
 
    `
    kubectl apply -f manifests/airflow-deployment.yaml
+   `
+
+   `
    kubectl apply -f manifests/airflow-service.yaml
    `
 
@@ -59,8 +65,9 @@ Logs from Airflow workers are stored in a PersistentVolume and accessible via th
 
 `
 kubectl cp ./dags/ <pod-name>:/opt/airflow/dags
-
 `
+
+
 **Restart Airflow Scheduler:**
 
 `
@@ -143,5 +150,7 @@ This method is chosen for its simplicity and scalability, allowing for straightf
 **Keep Airflow and Dependencies Updated:**
 
 - Regularly update Airflow and its dependencies to the latest stable versions to benefit from bug fixes and performance improvements.
+
+
 
 
