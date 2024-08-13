@@ -66,7 +66,7 @@ sudo nvidia-smi mig -cci
 
 **Install and Configure Karpenter:**
 
-- Follow the official Karpenter installation guide to set up Karpenter in your EKS cluster.
+- Follow the official [**Karpenter installation guide**](https://karpenter.sh/v0.37/getting-started/getting-started-with-karpenter/)  to set up Karpenter in your EKS cluster.
 
 **Configure Karpenter Provisioners:**
 
