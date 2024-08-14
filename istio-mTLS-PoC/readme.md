@@ -31,6 +31,8 @@ helm install istio-demo .
 
 `
 export POD_A=$(kubectl get pod -l app=service-a -o jsonpath='{.items[0].metadata.name}')
+`
+`
 export POD_B=$(kubectl get pod -l app=service-b -o jsonpath='{.items[0].metadata.name}')
 `
 
