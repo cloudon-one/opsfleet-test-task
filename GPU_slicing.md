@@ -10,7 +10,8 @@ Utilize underused GPU resources more effectively.
 - **Scalability:** 
 
 Enable more workloads to run simultaneously on fewer GPU resources.
-Flexibility: Optimize for different workload requirements and adjust slices as needed.
+
+- **Flexibility:** Optimize for different workload requirements and adjust slices as needed.
 
 ## Enabling GPU Slicing on EKS
 
