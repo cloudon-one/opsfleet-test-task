@@ -33,7 +33,7 @@ Ensure you have the latest NVIDIA drivers installed that support MIG.
 
 ## Steps to Enable GPU Slicing
 
-- **Install NVIDIA Device Plugin for Kubernetes:** This plugin allows Kubernetes to detect and utilize the GPU resources available on the nodes.
+**Install the NVIDIA Device Plugin for Kubernetes.** This plugin allows Kubernetes to detect and utilize the GPU resources available on the nodes.
 
 `
 kubectl apply -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/v0.13.0/deployments/gpu-feature-discovery.yaml
@@ -56,7 +56,7 @@ sudo nvidia-smi mig -cgi 19,19
 sudo nvidia-smi mig -cci
 `
 
-- **Deploy Pods Using GPU Slices:**
+**Deploy Pods Using GPU Slices:**
 
 - Update your pod spec to request specific GPU slices:
  ` 
