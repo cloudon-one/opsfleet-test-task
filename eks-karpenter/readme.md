@@ -5,7 +5,7 @@ This Terraform configuration deploys an Amazon EKS cluster with Karpenter for au
 ## Prerequisites
 
 - AWS CLI configured with appropriate credentials
-- Terraform installed (version 1.0.0 or later)
+- Terraform installed (version 1.5 or later)
 - kubectl installed
 - An existing VPC in your AWS account
 
