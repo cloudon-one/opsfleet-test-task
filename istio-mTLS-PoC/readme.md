@@ -32,6 +32,7 @@ helm install istio-demo .
 `
 export POD_A=$(kubectl get pod -l app=service-a -o jsonpath='{.items[0].metadata.name}')
 `
+
 `
 export POD_B=$(kubectl get pod -l app=service-b -o jsonpath='{.items[0].metadata.name}')
 `
@@ -41,6 +42,7 @@ export POD_B=$(kubectl get pod -l app=service-b -o jsonpath='{.items[0].metadata
 `
 kubectl exec -it $POD_A -c service-a -- curl http://service-b
 `
+
 *You should receive a response from Service B.*
 
 - **Verify the mTLS encryption:**
@@ -48,6 +50,7 @@ kubectl exec -it $POD_A -c service-a -- curl http://service-b
 `
 istioctl proxy-config log $POD_A --level debug
 `
+
 *Look for log entries indicating TLS handshake and encrypted communication*
 
 
