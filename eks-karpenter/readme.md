@@ -36,6 +36,12 @@ aws eks get-token --cluster-name demo-eks-cluster
 **Apply these manifests using:**
 
 `
+cd ../manifests
+`
+
+
+
+`
 kubectl apply -f nginx-x64.yaml
 `
 

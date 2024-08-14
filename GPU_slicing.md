@@ -60,7 +60,7 @@ sudo nvidia-smi mig -cci
 
 - Update your pod spec to request specific GPU slices:
  ` 
-   kubectl apply -f manifests/gpu-pod.yaml
+   kubectl apply -f eks-karpenter/manifests/gpu-pod.yaml
    `
 
 ## Enabling GPU Slicing with Karpenter Autoscaler  
@@ -76,7 +76,7 @@ sudo nvidia-smi mig -cci
 - Define provisioners in Karpenter that specify the instance types and resources needed.
 
  ` 
-   kubectl apply -f manifests/karpenter.yaml
+   kubectl apply -f eks-karpenter/manifests/karpenter.yaml
    `
 
 **Deploy Pods with Karpenter:**
