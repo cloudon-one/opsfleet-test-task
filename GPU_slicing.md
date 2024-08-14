@@ -85,11 +85,11 @@ sudo nvidia-smi mig -cci
 
 ## Best Practices
 
-- **Monitoring and Logging:** 
+**Monitoring and Logging:** 
 - Regularly monitor GPU usage and logs to ensure efficient utilization and troubleshoot any issues.
 
-- **Testing:** 
+**Testing:** 
 - Start with smaller configurations and gradually scale up to validate the impact on performance and cost savings.
 
-- **Up-to-date Software:** 
+**Up-to-date Software:** 
 - Keep your NVIDIA drivers and Kubernetes plugins up to date for the best performance and compatibility.
