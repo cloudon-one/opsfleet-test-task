@@ -1,0 +1,9 @@
+serviceA:
+  name: service-a
+  image: nginx:latest
+  replicas: 1
+
+serviceB:
+  name: service-b
+  image: nginx:latest
+  replicas: 1
