@@ -14,7 +14,7 @@ This Terraform configuration deploys an Amazon EKS cluster with Karpenter for au
 **Clone repository:** 
 
 `
-git clone git clone https://github.com/cloudon-one/opsfleet-test-task.git && cd eks-karpenter/terraform
+git clone https://github.com/cloudon-one/opsfleet-test-task.git && cd eks-karpenter/terraform
 `
 
 **Initialize Terraform:**
