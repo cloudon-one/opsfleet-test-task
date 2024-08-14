@@ -1,4 +1,4 @@
-# [GPU Slicing on EKS task](https://github.com/cloudon-one/opsfleet-test-task/blob/main/GPU_slicing.md)
+# [GPU Slicing on EKS](https://github.com/cloudon-one/opsfleet-test-task/blob/main/GPU_slicing.md)
 
 # [EKS Karpenter on Graviton](https://github.com/cloudon-one/opsfleet-test-task/tree/main/eks-karpenter)
 
