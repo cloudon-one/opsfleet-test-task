@@ -30,23 +30,9 @@ terraform apply
 **After the cluster is created, configure kubectl:**
 
 `
-aws eks get-token --cluster-name demo-eks-cluster
-`
-
-**Apply these manifests using:**
-
-`
-cd ../manifests
+aws eks get-token --cluster-name demo-cluster
 `
 
 
-
-`
-kubectl apply -f nginx-x64.yaml
-`
-
-`
-kubectl apply -f nginx-x86.yaml
-`
 - Karpenter will automatically provision the appropriate instance types based on the node selectors.
 
